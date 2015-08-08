@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension point="com.change_vision.astah.ui.actionSets">
+        <actionSet
+            label="%actionset_sakura_label"
+            visible="true"
+            id="jp.swest.ledcamp.sakura.actionSet">
+            <menu
+                id="sakura"
+                label="%menu_sakura_group"
+                path="tool/sakura">
+            </menu>
+            <action
+                label="%menu_write_label"
+                icon="icons/sample.gif"
+                class="jp.swest.ledcamp.sakuratools.actions.WriteAction"
+                tooltip="%menu_write_tooltip"
+                menubarPath="tool/sakura/"
+                id="jp.swest.ledcamp.sakuratools.actions.WriteAction">
+            </action>
+            <action
+                label="%menu_build_label"
+                icon="icons/sample.gif"
+                class="jp.swest.ledcamp.sakuratools.actions.BuildAction"
+                tooltip="%menu_build_tooltip"
+                menubarPath="tool/sakura/"
+                id="jp.swest.ledcamp.sakuratools.actions.BuildAction">
+            </action>
+        </actionSet>
+   </extension>
+</plugin>
