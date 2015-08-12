@@ -38,7 +38,7 @@ public class BuildAction implements IPluginActionDelegate {
 
 		@Override
 		protected Integer doInBackground() throws Exception {
-			ProcessBuilder processBuilder = new ProcessBuilder(command);
+			ProcessBuilder processBuilder = new ProcessBuilder(command, "all");
 			processBuilder.directory(projectDir);
 			processBuilder.redirectErrorStream(true);
 			System.out.println("building..");
