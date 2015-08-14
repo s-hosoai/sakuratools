@@ -280,6 +280,7 @@
 			<groupId>jp.swest.ledcamp</groupId>
 			<artifactId>astahm2t</artifactId>
 			<version>1.3.1</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<name>GR-Sakura用ユーティリティ</name>
