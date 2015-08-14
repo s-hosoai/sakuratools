@@ -18,6 +18,7 @@ public class Settings {
 				instance = new Settings();
 				instance.sakuraDrive = "D://";
 				instance.e2makePath = "c:/Renesas/e2_studio/Utilities/make.exe";
+				save();
 			}
 		}
 		return instance;
@@ -43,7 +44,7 @@ public class Settings {
 	public void setE2makePath(String e2makePath) {
 		this.e2makePath = e2makePath;
 	}	
-	private void save(){
+	private static void save(){
 		if(Files.notExists(sakuratoolsSettingPath)){
 			try {
 				Files.createDirectories(sakuratoolsSettingPath);
@@ -51,7 +52,7 @@ public class Settings {
 				e.printStackTrace();
 			}
 		}
-		JAXB.marshal(this, sakuratoolsSettingPath.resolve("setting.xml").toFile());				
+		JAXB.marshal(instance, sakuratoolsSettingPath.resolve("setting.xml").toFile());				
 	}
 	public static void main(String[] args) {
 		Settings.getInstance().save();
