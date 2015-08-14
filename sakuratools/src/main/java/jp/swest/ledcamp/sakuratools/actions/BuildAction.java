@@ -10,8 +10,6 @@ import java.nio.file.Paths;
 import javax.swing.JOptionPane;
 import javax.swing.SwingWorker;
 
-import jp.swest.ledcamp.setting.SettingManager;
-
 import com.change_vision.jude.api.inf.ui.IPluginActionDelegate;
 import com.change_vision.jude.api.inf.ui.IWindow;
 

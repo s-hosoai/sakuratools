@@ -9,8 +9,6 @@ import java.nio.file.StandardCopyOption;
 
 import javax.swing.JOptionPane;
 
-import jp.swest.ledcamp.setting.SettingManager;
-
 import com.change_vision.jude.api.inf.ui.IPluginActionDelegate;
 import com.change_vision.jude.api.inf.ui.IWindow;
 
