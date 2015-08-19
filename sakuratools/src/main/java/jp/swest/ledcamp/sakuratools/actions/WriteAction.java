@@ -17,7 +17,7 @@ public class WriteAction implements IPluginActionDelegate{
 
 	@Override
 	public Object run(IWindow window) throws UnExpectedException {
-		Path sakuraDrive = Paths.get(Settings.getInstance().getE2makePath());
+		Path sakuraDrive = Paths.get(Settings.getInstance().getSakuraDrive());
 		Path binaryFile = Paths.get(SettingManager.getInstance().getCurrentSetting().getTargetPath()).getParent().resolve(BINARY_FILE);
 		if(Files.notExists(binaryFile)){
 			JOptionPane.showMessageDialog(window.getParent(), BINARY_FILE+" not found in :"+binaryFile.getParent()+". Please rebuild.");

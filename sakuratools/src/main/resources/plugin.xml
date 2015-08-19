@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin>
+<plugin
+
+   class="jp.swest.ledcamp.sakuratools.Activator">
    <extension point="com.change_vision.astah.ui.actionSets">
         <actionSet
             label="%actionset_sakura_label"

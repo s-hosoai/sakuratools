@@ -3,15 +3,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<properties>
 		<bundle.symbolicName>jp.swest.ledcamp.sakuratools</bundle.symbolicName>
-		<bundle.namespace>jp.swest.ledcamp</bundle.namespace>
+		<bundle.namespace>jp.swest.ledcamp.sakuratools</bundle.namespace>
 		<plugin.install>true</plugin.install>
 		<astah.version>6.7</astah.version>
 		<astah.edition>all</astah.edition>
 	</properties>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>jp.swest.ledcamp</groupId>
+	<groupId>jp.swest.ledcamp.sakuratools</groupId>
 	<artifactId>sakuratools</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>jar</packaging>
 	<pluginRepositories>
 		<pluginRepository>
